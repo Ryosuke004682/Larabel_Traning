@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\AnimalController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +13,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::get('/home' , [HomeController::class, 'index']) -> name('home');
+Route::get('/' , [AnimalController::class , 'index']);
+Route::get('/animals/{id}' , [AnimalController::class , 'show']);
