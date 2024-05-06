@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<form action="{{ route('logout') }}" method="post">
-    @csrf
-    <input type="submit" value="ログアウト">
-</form>
+    <h1>マイページ</h1>
+    <p><a href="{{ route('books.create') }}">+書籍登録</a></p>
+@include('commons.books')
 @endsection

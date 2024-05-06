@@ -11,6 +11,7 @@
             <!--config(設定ファイルの名前 , 設定項目のキー)　、今回はapp.nameという設定ファイルを指定-->
             <!--app.nameは、「config/app.php」の「'name' => env('APP_NAME', 'Laravel')」を参照。-->
             <a class="brand" href="/">{{ config('app.name') }}</a>
+            @include('commons.nav')
         </div>
     </header>
     <main>
