@@ -10,7 +10,7 @@
             <a href="{{ route('likes.index') }}">お気に入り</a>
         </li>
         <li>
-            <a href=" " onclick="logout()">ログアウト</a>
+            <a href="#" onclick="logout()">ログアウト</a>
             <form id="logout-form" action="{{ route('logout') }}" method="post">
                 @csrf
             </form>
