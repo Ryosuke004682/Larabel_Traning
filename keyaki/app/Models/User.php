@@ -45,4 +45,17 @@ class User extends Authenticatable
     public function books() {
         return $this->hasMany(Book::class);
     }
+
+    
+    public function likeBooks() {
+        //belongsToMany : 多対多の関係を定義するやつ
+        //withTimestamps : likesテーブルのcreated_atと、updated_atの２つのタイムスタンプが更新される。
+
+        return $this->belongsToMany(Book::class , 'likes')->withTimestamps();
+        //belongsToMany(中間テーブルを通じて取得したい対象のクラス , どのテーブル使うか)
+    }
+
+    public function isLike($book_id) {
+        return $this->likeBooks()->where('books.id' ,  $book_id)->exists();
+    }
 }
