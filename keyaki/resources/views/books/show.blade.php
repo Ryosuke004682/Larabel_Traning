@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
+
 @section('content')
 <h1>書籍情報</h1>
 <p>
-@if($book->user_id == Auth::id)
+@if($book->user_id == Auth::id())
     <a href="{{ route('books.edit' , $book) }}">編集する</a>
     |
     <a href="#" onclick="deleteBook()">削除する</a>

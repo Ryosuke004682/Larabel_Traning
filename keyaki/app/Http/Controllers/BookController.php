@@ -49,7 +49,7 @@ class BookController extends Controller
 
         //validate(リクエスト , 検証ルールの連想配列)
         $this->validate($request , [
-            'title'     => 'required|max = 100',
+            'title'     => 'required|max : 100',
             'author'    => 'max : 100',
             'publisher' => 'max : 100'
         ]);
