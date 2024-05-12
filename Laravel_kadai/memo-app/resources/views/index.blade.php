@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>メモ帳アプリ : メモ一覧画面</title>
+</head>
+<body>
+    <h1>メモ一覧</h1>
+    <p><a href="{{ route('memos.create') }}">＋新規メモ作成</a></p>
+    @foreach($memos as $memo)
+        <p><a href="{{ route('memos.show' , $memo->id) }}">{{ $memo->title }}</a></p>
+    @endforeach
+</body>
+</html>
