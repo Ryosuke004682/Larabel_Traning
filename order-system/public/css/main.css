@@ -1,0 +1,108 @@
+html {
+    font-size: 90%;
+    line-height: 1.8;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+a:link {
+    text-decoration: none;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=date],
+select,
+textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #cacaca;
+}
+button {
+    padding: 5px 15px;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+header {
+    background: #444;
+    color: #bbb;
+}
+header a {
+    color: #ddd;
+}
+header a:hover {
+    color: #fff;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .brand {
+    display: block;
+    font-size: 1.3rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation li {
+    padding: 0 10px;
+}
+.flex {
+    display: flex;
+}
+.sidebar {
+    width: 240px;
+}
+.content {
+    width: calc(100% - 240px);
+    padding-left: 15px;
+}
+h1 {
+    margin: 0 0 20px;
+    padding: 6px 12px;
+    background: #eee;
+    font-size: 20px;
+    font-weight: normal;
+}
+table.table {
+    border-collapse: collapse;
+}
+table.table thead {
+    background: #f1f1f1;
+    font-weight: bold;
+}
+table.table th,
+table.table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+table.table th {
+    text-align: left;
+}
+dl {
+    margin: 0;
+}
+dt {
+    margin-bottom: 5px;
+    font-size: .9rem;
+    font-weight: bold;
+}
+dd {
+    margin: 0 0 15px;
+
+}
+svg.w-5.h-5 {
+    width: 25px;
+    vertical-align: middle;
+}
